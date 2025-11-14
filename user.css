@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    color: #5a3b23;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    width: 90%;
+    max-width: 380px;
+    animation: fadeIn 1s ease both;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: 1px solid #d4c4ad;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fffaf2;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #b68b4c;
+    box-shadow: 0 0 6px rgba(182, 139, 76, 0.4);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #b68b4c;
+    color: #fff;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a67b3d;
+    transform: translateY(-2px);
+}
+
+p {
+    color: #4b3621;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: #b68b4c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 100%;
+        padding: 20px;
+        min-width: 0;
+    }
+}
+
+
