@@ -1,0 +1,93 @@
+body {
+    padding-top: 100px; 
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+table {
+    margin: 0 auto; 
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1.5px solid #c8a974; 
+    color: #4b3621;
+}
+
+th {
+    background-color: #b68b4c;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f9f3e9;
+}
+
+table, th, td {
+    border: 1px solid #c8a974;
+}
+
+tr:not(:last-child) {
+    border-bottom: 2px solid #d4b67a;
+}
+
+td:last-child {
+    white-space: nowrap;
+}
+
+td a {
+    text-decoration: none;
+    color: #4b3621;
+    font-weight: 500;
+    margin: 0 10px; 
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: #f3e2c0;
+    transition: all 0.2s ease-in-out;
+}
+
+td a:hover {
+    background-color: #b68b4c;
+    color: white;
+    text-decoration: none;
+}
+
+.add-room-btn {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    
+    color: #4b3621; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 10px 22px;
+
+    border-radius: 10px;
+    border: 2px solid #d4b67a;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(2px);
+
+    transition: all 0.25s ease-in-out;
+}
+
+.add-room-btn:hover {
+    background: #b68b4c;
+    color: white;
+    border-color: #b68b4c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+
